@@ -26,10 +26,9 @@ class Learner
     return count_new_words;
   }
 
-  vector<string> KnownWords() {
-    vector<string> result;
-    copy(dict.begin(), dict.end(), back_inserter(result));
-    return result;
+  vector<string> KnownWords()
+  {
+    return {dict.begin(), dict.end()};
   }
 };
 
